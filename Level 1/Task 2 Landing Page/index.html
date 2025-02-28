@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>My Landing Page</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to My Landing Page</h2>
+        <p>Your go-to solution for web development.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>We built responsive and modern websites.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>UI/UX Design</h3>
+                <p>Creating engaging and user-friendly interfaces.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>SEO & Marketing</h3>
+                <p>Boost Your Online Presence And Reach Your Audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Landing Page. All Rights Reserveds.</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out!');
+        });
+    </script>
+    
+</body>
+</html>
